@@ -1,0 +1,8 @@
+{
+  "react-bootstrap": "0.28.1",
+  "twitter": "1.2.5",
+  "events": "1.1.0",
+  "oauth": "0.9.3",
+  "util": "0.10.3",
+  "externalify": "0.1.0"
+}

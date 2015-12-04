@@ -1,0 +1,255 @@
+// scope css to component
+.tweet-item {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  min-height: 100px;
+  margin-bottom: 5px;
+  background: white;
+  border: 1px solid #d3d3d3;
+  font-size: 14px;
+  color: #242424;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+  border-bottom-color: #bebebe;
+
+  .feed-item-desc {
+    margin-top: 10px;
+  }
+
+  &__header {
+    margin-bottom: 5px;
+    display: inline;
+
+    .retweet-mark {
+      margin-left: 65px;
+      margin-bottom: 4px;
+      color: gray;
+    }
+
+    .avatar {
+      height: 48px;
+      width: 48px;
+      background: gray;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .avatar-image {
+      border-radius: 6px;
+    }
+
+    .name {
+      margin: 0 0 3px 15px;
+      color: $primary;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .screen-name {
+      color: gray;
+      display: inline;
+      font-weight: 500;
+    }
+
+    .date {
+      color: gray;
+      font-size: 13px;
+      display: inline-block;
+      float: right;
+      margin-right: 5px;
+    }
+
+    .destroy {
+      font-size: 13px;
+      color: gray;
+      cursor: pointer;
+    }
+  }
+
+  .retweet-icon {
+    color: #ccd6dd;
+    margin-right: 5px;
+    -webkit-text-stroke: 0.04em;
+    font-size: 15px;
+  }
+
+  .retweet-sign {
+    color: #77b255;
+    -webkit-text-stroke: 0.04em;
+    font-size: 15px;
+    margin-left: -30px;
+    margin-right: 12px;
+  }
+
+  .retweet-icon:hover {
+    color: #77b255;
+    -webkit-text-stroke: 0.04em;
+    font-size: 15px;
+  }
+
+  .favorite-icon {
+    color: #ccd6dd;
+    margin-right: 5px;
+    -webkit-text-stroke: 0.04em;
+    font-size: 15px;
+  }
+
+  .favorite-icon:hover {
+    color: #ffac33;
+    -webkit-text-stroke: 0.04em;
+    font-size: 15px;
+  }
+
+  &__footer {
+    font-size: 13px;
+    height: 23px;
+    margin-top: 10px;
+
+    a { margin-right: 10px; }
+    .by-people { margin-right: 45px; }
+  }
+
+  &__comments {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 7px 10px;
+    background-color: #f7f8fa;
+    border-top: 1px solid #e5e5e5;
+
+    input {
+      border: 1px solid #cfcfcf;
+      padding: 6px;
+      font-size: 12px;
+      width: 100%;
+
+      &:placeholder {
+        font-size: 10px;
+      }
+    }
+
+    .comment-form {
+    }
+  }
+
+  .stats {
+    margin-left: 11px;
+    padding: 10px 0;
+  }
+
+  .stat {
+    display: inline-block;
+    width: 33%;
+  }
+
+  .Arrange {
+    box-sizing: border-box;
+    display: table;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    table-layout: auto;
+  }
+  .Arrange--equal {
+    table-layout: fixed;
+  }
+
+  .Arrange--bottom .Arrange-sizeFill, .Arrange--bottom .Arrange-sizeFit {
+    vertical-align: bottom;
+  }
+
+  .statList {
+    line-height: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .statLabel {
+    color: #8c9ca9;
+    font-size: 10px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    transition: color .15s ease-in-out;
+    overflow: hidden;
+  }
+
+  .statValue {
+    display: block;
+    font-size: 18px;
+    padding-top: 3px;
+    font-weight: 500;
+    transition: color .15s ease-in-out;
+    color: #0084B4 !important;
+  }
+
+  .create-time {
+    color: #8c9ca9;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .well {
+    padding: 0;
+    background-color: #f5f5f5;
+    border: 0;
+  }
+
+}
+
+.tweet-item:hover {
+  background-color: #EEE;
+}
+
+// TODO move to correct place
+.more-btn {
+  padding: 7px 15px;
+  margin: 10px 0 20px 200px; // FIXME
+  background-color: $primary;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.hashtag {
+  color: #0084B4;
+}
+
+.user_mention {
+  color: #0084B4;
+}
+
+.invisible {
+  display: none;
+}
+
+.media {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.media-thumbnail {
+  display: block;
+  max-height: 253px;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.media-thumbnail-expanded {
+  display: block;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.tweets-loading {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: gray;
+}

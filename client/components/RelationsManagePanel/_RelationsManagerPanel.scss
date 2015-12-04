@@ -1,0 +1,52 @@
+.relations-manager-panel {
+  background-color: white;
+
+  .manager-panel-tab {
+    background-color: #EEE;
+    border-bottom: 0;
+  }
+
+  .manager-panel-tab-content {
+    border-radius: 2px;
+    color: #555;
+    cursor: default;
+    border: 1px solid #ddd;
+  }
+
+  .relation-item {
+    margin: 5px 5px 5px 5px;
+    height: 75px;
+
+    .avatar {
+      display: inline-block;
+      border-radius: 6px;
+      margin-top: 6px;
+    }
+
+    .avatar-image {
+      border-radius: 6px;
+    }
+
+    .name {
+      margin: 5px 0 0 15px;
+      font-weight: bold;
+      max-width: 125px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .relation-button {
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 6px;
+      float: right;
+      width: 80px
+    }
+
+    .following {
+      color: #fff;
+      background-color: #55acee;
+      border: 1px solid #3b88c3;
+    }
+  }
+}

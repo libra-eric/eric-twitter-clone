@@ -1,0 +1,71 @@
+// Feed page, components hand their own styling
+
+.feed {
+  .container {
+    display: flex;
+  }
+
+  h5 {
+    margin: 20px 0 6px;
+    font-size: 16px;
+    color: $primary;
+  }
+
+  .trending-posts {
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      padding: 0;
+      list-style-type: none;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+h1 {
+  font-size: 3em;
+  color: #6D6D6D;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.top {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+}
+
+.need-login {
+  margin-top: 40px;
+}
+
+.twitter-login {
+  position: relative;
+  display: inline-block;
+  background-color: #34BDD5;
+  color: #f5f5f5;
+  border-radius: 6px;
+  padding: 16px 28px;
+  font-size: .9em;
+}
+
+.top .update-message {
+  margin-top: 50px;
+  font-size : .8em;
+}
+

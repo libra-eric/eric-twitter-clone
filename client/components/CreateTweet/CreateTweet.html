@@ -1,0 +1,15 @@
+
+<template name="CreateTweet">
+  <div class="create-tweet-container">
+    <div class="create-tweet-box">
+      {{#textareaAutocomplete settings=settings class="create-tweet" placeholder="What's happening..."}}{{/textareaAutocomplete}}
+    </div>
+  <button type="button" class="create-tweet-btn btn btn-primary">Tweet</button>
+  </div>
+</template>
+
+<template name="relatedUser">
+  <p class="typeahead-avatar"><img src={{users.avatar}}/></p>
+  <p class="typeahead-screen_name">@{{users.screen_name}}</p>
+  <p class="typeahead-name">{{users.name}}</p>
+</template>

@@ -1,0 +1,21 @@
+.new-tweets-bar {
+  //display             : flex;
+  //flex-direction      : column;
+  padding             : 15px 10px 5px 10px;
+  background          : #f5f8fa;
+  border              : 1px solid #d3d3d3;
+  height: 50px;
+  font-size           : 14px;
+  //line-height         : 1.4em;
+  color               : #242424;
+  //box-shadow          : 0 0 3px rgba(0, 0, 0, 0.07);
+  border-radius       : 3px;
+  //border-bottom-color : #bebebe;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 0;
+
+  .new-tweets-notification {
+    color: #0084B4;
+  }
+}

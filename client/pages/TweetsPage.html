@@ -1,0 +1,60 @@
+<template name="TweetsPage">
+  {{>content}}
+</template>
+
+<template name='tweetsList'>
+  <div class="feed">
+    <div class="container">
+
+      <div class="col-25">
+        {{> ReactComponent type="ProfileCard" }}
+      </div>
+
+      <div class="col-50">
+        {{> CreateTweet}}
+        {{> ReactComponent type="SessionData" }}
+      </div>
+
+      <div class="col-25">
+        {{> ReactComponent type="RelationsManagerPanel" }}
+      </div>
+
+    </div>
+  </div>
+</template>
+
+
+<template name="needLogin">
+
+  <section class="top">
+    <div class="inner">
+      <h1>
+        Twitter Web Application Clone.
+      </h1>
+      <p>
+        A general clone of twitter web client using MeteorJS and ReactJS
+      </p>
+      {{> loginType}}
+      <p class="update-message">
+        Update (25/09/15): Working on personal page and
+        <br>followers friends management page
+        <br>For more info please <a href="mailto:wxl20087@gmail.com?subject=Contact from twitter clone app">contact</a>.
+      </p>
+    </div>
+  </section>
+
+</template>
+
+<template name="loginType">
+  {{>content}}
+</template>
+
+<template name="loginButton">
+  <div class="need-login">
+    <button type="button" class="twitter-login btn btn-info">Sign with Twitter</button>
+  </div>
+</template>
+
+<template name="loginSpinner">
+  <img src="loading.svg">
+</template>

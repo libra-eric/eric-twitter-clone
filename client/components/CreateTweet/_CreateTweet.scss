@@ -1,0 +1,73 @@
+.create-tweet {
+  width: 100%;
+  border: 1px solid #D2D2D2;
+
+  textarea {
+    width: 100%;
+    height: 68px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+
+    &:placeholder {
+      color: gray;
+    }
+
+  }
+
+  button {
+    align-self: flex-end;
+    padding: 7px 15px;
+    margin: 0 10px 10px 0;
+    background-color: $primary;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.create-tweet-box {
+  display : inline-block;
+  width : 100%;
+}
+
+.create-tweet-container {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #d3d3d3;
+  background-color: aliceblue;
+}
+
+.create-tweet-btn {
+  float: right;
+}
+
+.-autocomplete-container {
+  display: block!important;
+  background-color : white;
+  width: 350px;
+
+  .typeahead-avatar {
+    float: left;
+    font-style: italic;
+    display : inline-block;
+  }
+
+  .typeahead-name, .typeahead-screen_name{
+    font-size: 14px;
+    display : inline-block;
+    margin-left: 10px;
+  }
+}
+
+.-autocomplete-item {
+  height: 58px;
+  width: 100%;
+  display: block;
+  padding: 5px 10px;
+}
+
